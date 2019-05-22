@@ -1,6 +1,9 @@
-from Graphs.graph import graph
+#from Graphs.graph import graph
+import Graphs.graph as gg
+from BasicDS.Q import Queue
 
-g=graph()
+
+g=gg.graph()
 
 g.addVertex('V0')
 g.addVertex('V1')
@@ -17,5 +20,8 @@ g.addEdge('V2','V0',2)
 g.addEdge('V2','V3',1)
 
 print(g)
+gg.bfs(g,g.vertList['V1'])
+
+gg.traverse(g.vertList['V3'])
 
 

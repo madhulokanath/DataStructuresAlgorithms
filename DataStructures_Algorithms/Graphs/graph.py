@@ -1,4 +1,5 @@
 from Graphs.vertexClass import Vertex
+from BasicDS.Q import Queue
 class graph:
     def __init__(self):
         self.vertList={}
@@ -45,6 +46,29 @@ class graph:
         for a in self.vertList:
             print(self.vertList[a])
         return 'End'
+
+def bfs(g,start):
+  start.setDistance(0)
+  start.setPred(None)
+  vertQueue = Queue()
+  vertQueue.enqueue(start)
+  while (vertQueue.size() > 0):
+    currentVert = vertQueue.dequeue()
+    for nbr in currentVert.getConnections():
+      if (nbr.getColor() == 'white'):
+        nbr.setColor('gray')
+        nbr.setDistance(currentVert.getDistance() + 1)
+        nbr.setPred(currentVert)
+        vertQueue.enqueue(nbr)
+    currentVert.setColor('black')
+
+def traverse(y):
+    x = y
+    while (x.getPred()):
+        print(x.getid())
+        x = x.getPred()
+    print(x.getid())
+
 
 
 
