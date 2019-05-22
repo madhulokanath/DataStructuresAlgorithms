@@ -33,7 +33,7 @@
     <Folder Include="Graphs\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Graphs\TextFile1.txt" />
+    <Content Include="Graphs\ReadMe.docx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
