@@ -31,10 +31,18 @@
     <Compile Include="Graphs\vertexClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Interviews\Zulily_May24.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LeetCode\NumberOfIslands.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Graphs\" />
     <Folder Include="BasicDS\" />
+    <Folder Include="LeetCode\" />
+    <Folder Include="Interviews\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Graphs\ReadMe.docx" />
